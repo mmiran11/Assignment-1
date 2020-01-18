@@ -9,7 +9,8 @@ public class TestMain {
 			studentScores[i] = scan.nextInt();
 		}
 		Test Student1 = new Test("Sara", "Williams", studentScores);
-		System.out.println (Student1.testScores[4]);
+		int scoreAverage = Student1.averageScore(studentScores);
+		System.out.println (scoreAverage);
 	}
 
 }
