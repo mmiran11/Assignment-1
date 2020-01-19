@@ -21,7 +21,7 @@ public class Test {
 			this.avg += scores[i];
 		}
 		this.avg = avg / scores.length;
-		return Math.round(this.avg);
+		return Math.round(this.avg * 100) / 100;
 	}
 	
 	public String finalGrade (double avg) {

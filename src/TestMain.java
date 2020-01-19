@@ -17,7 +17,7 @@ public class TestMain {
 			}
 			students[i] = new Test(first, last, testScores);
 		}
-		double classAverage;
+		double classAverage = 0;
 		System.out.print ("First name:    ");
 		System.out.print ("Last name:    ");
 		System.out.print ("Test 1:    ");
@@ -27,9 +27,13 @@ public class TestMain {
 		System.out.print ("Test 5:    ");
 		System.out.print ("Average:    ");
 		System.out.print ("Letter Grade:    ");
+		System.out.println();
 		for(int i = 0; i < students.length; i++) {
-			System.out.print(students[i].toString());
+			System.out.println(students[i].toString());
+			classAverage += students[i].avg;
 		}
+		classAverage = classAverage / 10;
+		System.out.println("Class Average: " + Math.round(classAverage * 100.0) / 100.0);
 	}
 
 }
