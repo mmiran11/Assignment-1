@@ -7,7 +7,7 @@ public class Test {
 	Test() {
 		this.firstName = "Bob";
 		this.lastName = "Jackson";
-		this.avg = 0;
+		avg = 0;
 	}
 	
 	Test (String firstName, String lastName, int [] arr){
@@ -18,33 +18,29 @@ public class Test {
 	
 	public double averageScore(int [] scores) {
 		for(int i = 0; i < scores.length; i++) {
-			this.avg += scores[i];
+			avg += scores[i];
 		}
-		this.avg = avg / scores.length;
-		return Math.round(this.avg * 100) / 100;
+		avg = avg / scores.length;
+		return Math.round(avg * 100) / 100;
 	}
 	
 	public String finalGrade (double avg) {
 		if (avg >= 90) {
-			return this.finalGrade = "A";
+			return finalGrade = "A";
 		}
 		else if (avg >= 80) {
-			return this.finalGrade = "B";
+			return finalGrade = "B";
 		}
 		else if (avg >= 70) {
-			return this.finalGrade = "C";
+			return finalGrade = "C";
 		}
 		else if (avg >= 60) {
-			return this.finalGrade = "D";
+			return finalGrade = "D";
 		}
 		else {
-			return this.finalGrade = "F";
+			return finalGrade = "F";
 		}
 	}
-	
-//	public String getFinalGrade() {
-//		return this.finalGrade;
-//	}
 	
 	public void setTestScore(int testToChange, int newScore) {
 		this.testScores[testToChange] = newScore;
