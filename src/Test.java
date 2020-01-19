@@ -24,27 +24,27 @@ public class Test {
 		return Math.round(this.avg);
 	}
 	
-	public void finalGrade (double avg) {
+	public String finalGrade (double avg) {
 		if (avg >= 90) {
-			this.finalGrade = "A";
+			return this.finalGrade = "A";
 		}
 		else if (avg >= 80) {
-			this.finalGrade = "B";
+			return this.finalGrade = "B";
 		}
 		else if (avg >= 70) {
-			this.finalGrade = "C";
+			return this.finalGrade = "C";
 		}
 		else if (avg >= 60) {
-			this.finalGrade = "D";
+			return this.finalGrade = "D";
 		}
 		else {
-			this.finalGrade = "F";
+			return this.finalGrade = "F";
 		}
 	}
 	
-	public String getFinalGrade() {
-		return this.finalGrade;
-	}
+//	public String getFinalGrade() {
+//		return this.finalGrade;
+//	}
 	
 	public void setTestScore(int testToChange, int newScore) {
 		this.testScores[testToChange] = newScore;
@@ -56,6 +56,6 @@ public class Test {
 	
 	public String toString() {
 		return firstName + "    " + lastName + "    " + testScores[0] + "    " + testScores[1] + "    "  + testScores[2] + 
-				"    " + testScores[3] + "    " + testScores[4] + "    " + avg + "    " + finalGrade;
+				"    " + testScores[3] + "    " + testScores[4] + "    " + averageScore(testScores) + "    " + finalGrade(avg);
 	}
 }

@@ -28,9 +28,7 @@ public class TestMain {
 		System.out.print ("Average:    ");
 		System.out.print ("Letter Grade:    ");
 		for(int i = 0; i < students.length; i++) {
-			System.out.print(students[i].firstName + "    ");
-			System.out.print(students[i].lastName + "    ");
-			System.out.print(students[i].testScores + "    ");
+			System.out.print(students[i].toString());
 		}
 	}
 
