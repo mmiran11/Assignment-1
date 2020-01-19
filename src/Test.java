@@ -55,7 +55,7 @@ public class Test {
 	}
 	
 	public String toString() {
-		return firstName + " " + lastName + "'s test scores are: \n" + testScores + 
-				"\n Their average grade is " + avg + ", so their final grade is " + finalGrade;
+		return firstName + "    " + lastName + "    " + testScores[0] + "    " + testScores[1] + "    "  + testScores[2] + 
+				"    " + testScores[3] + "    " + testScores[4] + "    " + avg + "    " + finalGrade;
 	}
 }
