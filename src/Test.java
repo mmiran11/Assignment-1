@@ -1,8 +1,8 @@
 
 public class Test {
-	public String firstName, lastName, finalGrade;
-	public int [] testScores = new int[5];
-	public double avg;
+	String firstName, lastName, finalGrade;
+	int [] testScores = new int[5];
+	double avg;
 	
 	Test() {
 		this.firstName = "Bob";
