@@ -17,6 +17,19 @@ public class TestMain {
 			}
 			students[i] = new Test(first, last, testScores);
 		}
+		double classAverage;
+		System.out.print ("First name:    ");
+		System.out.print ("Last name:    ");
+		System.out.print ("Test 1:    ");
+		System.out.print ("Test 2:    ");
+		System.out.print ("Test 3:    ");
+		System.out.print ("Test 4:    ");
+		System.out.print ("Test 5:    ");
+		System.out.print ("Average:    ");
+		System.out.print ("Letter Grade:    ");
+		for(int i = 0; i < students.length; i++) {
+			
+		}
 	}
 
 }
