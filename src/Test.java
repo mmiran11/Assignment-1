@@ -2,7 +2,7 @@
 public class Test {
 	String firstName, lastName, finalGrade;
 	int [] testScores = new int[5];
-	int avg;
+	double avg;
 	
 	Test() {
 		this.firstName = "Bob";
@@ -16,33 +16,46 @@ public class Test {
 		this.testScores = arr;
 	}
 	
-	public int averageScore(int [] scores) {
+	public double averageScore(int [] scores) {
 		for(int i = 0; i < scores.length; i++) {
 			this.avg += scores[i];
 		}
 		this.avg = avg / scores.length;
-		return this.avg;
+		return Math.round(this.avg);
 	}
 	
-	public String finalGrade (int avg) {
+	public void finalGrade (double avg) {
 		if (avg >= 90) {
-			return this.finalGrade = "A";
+			this.finalGrade = "A";
 		}
 		else if (avg >= 80) {
-			return this.finalGrade = "B";
+			this.finalGrade = "B";
 		}
 		else if (avg >= 70) {
-			return this.finalGrade = "C";
+			this.finalGrade = "C";
 		}
 		else if (avg >= 60) {
-			return this.finalGrade = "D";
+			this.finalGrade = "D";
 		}
 		else {
-			return this.finalGrade = "F";
+			this.finalGrade = "F";
 		}
 	}
 	
-	public void getFinalGrade() {
-		System.out.print("Final grade: " + this.finalGrade);
+	public String getFinalGrade() {
+		return this.finalGrade;
+	}
+	
+	public void setTestScore(int testToChange, int newScore) {
+		this.testScores[testToChange] = newScore;
+	}
+	
+	public int[] getTestScores() {
+		return this.testScores;
+	}
+	
+	public String toString() {
+		return firstName + " " + lastName + "'s test scores are: \n" + testScores + 
+				"\n Their average grade is " + avg + ", so their final grade is " + finalGrade;
 	}
 }
