@@ -20,7 +20,7 @@ public class Test {
 		for(int i = 0; i < scores.length; i++) {
 			avg += scores[i];
 		}
-		avg = avg / scores.length;
+		avg = avg / 5.0;
 		return Math.round(avg * 100) / 100;
 	}
 	
@@ -51,7 +51,7 @@ public class Test {
 	}
 	
 	public String toString() {
-		return firstName + "    " + lastName + "    " + testScores[0] + "    " + testScores[1] + "    "  + testScores[2] + 
-				"    " + testScores[3] + "    " + testScores[4] + "    " + averageScore(testScores) + "    " + finalGrade(avg);
+		return firstName + "\t    " + lastName + "\t     " + testScores[0] + "\t     " + testScores[1] + "\t     "  + testScores[2] + 
+				"\t     " + testScores[3] + "\t     " + testScores[4] + "\t     " + averageScore(testScores) + "\t     " + finalGrade(avg);
 	}
 }
