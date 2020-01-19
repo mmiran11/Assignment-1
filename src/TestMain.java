@@ -8,11 +8,11 @@ public class TestMain {
 		for (int i = 0; i < students.length; i++) {
 			int [] testScores = new int [5];
 			System.out.print ("Enter student " + (i + 1) + "'s first name: ");
-			first = scan.nextLine();
+			first = scan.next();
 			System.out.print ("Enter student " + (i + 1) + "'s last name: ");
-			last = scan.nextLine();
+			last = scan.next();
 			for(int k = 0; k < testScores.length; k++) {
-				System.out.print("Enter " + students[i].firstName + "'s test " + (k + 1) + " score: ");
+				System.out.print("Enter " + first + "'s test " + (k + 1) + " score: ");
 				testScores[k] = scan.nextInt();
 			}
 			students[i] = new Test(first, last, testScores);
